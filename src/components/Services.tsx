@@ -1,0 +1,78 @@
+import React from 'react';
+import { Scissors, Palette, Sparkles } from 'lucide-react';
+
+import cortesImage from '../assets/img/estilo_harmonia.png';
+import colorImage from '../assets/img/color_mecha.png';
+import capilarImage from '../assets/img/tratamento_capilar.png';
+
+
+interface ServiceCardProps {
+  title: string;
+  description: string;
+  image: string;
+  icon: React.ReactNode;
+}
+
+const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, image, icon }) => (
+  <div className="bg-[#f2efe9] rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col h-full border border-stone-100">
+    <div className="h-64 relative group">
+      <img src={image} alt={title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+      <div className="absolute bottom-4 left-4 text-helena-wine bg-black/50 p-2 rounded-full backdrop-blur-sm">
+        {icon}
+      </div>
+    </div>
+    <div className="p-8 flex-1 flex flex-col justify-center text-center">
+      <h3 className="font-serif text-2xl text-stone-800 mb-4">{title}</h3>
+      <p className="text-stone-500 font-light text-sm leading-relaxed">{description}</p>
+    </div>
+  </div>
+);
+
+const Services: React.FC = () => {
+  const services = [
+    {
+      title: "Cortes Personalizados",
+      description: "Design de corte que valoriza seu rosto e estilo de vida.",      
+      image: cortesImage,
+      icon: <Scissors size={20} />
+    },
+    {
+      title: "Coloração & Mechas",
+      description: "Técnicas modernas de coloração, luzes e morena iluminada.",
+      image: colorImage,
+      icon: <Palette size={20} />
+    },
+    {
+      title: "Tratamentos",
+      description: "Hidratação profunda, cronograma capilar e reconstrução.",
+      image: capilarImage,
+      icon: <Sparkles size={20} />
+    }
+  ];
+
+  return (
+    <section id="servicos" className="py-24 bg-helena-bg">
+      <div className="container mx-auto px-4 md:px-8">
+        <div className="text-center mb-16">
+          <span className="text-helena-wine text-xs tracking-[0.2em] uppercase font-bold mb-3 block">
+            Nossos Serviços
+          </span>
+          <h2 className="text-5xl font-serif text-helena-dark mb-6">
+            Especialidades
+          </h2>
+          <p className="text-stone-500 font-light max-w-2xl mx-auto">
+            Oferecemos uma gama completa de serviços para transformar e cuidar do seu visual.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {services.map((service, index) => (
+            <ServiceCard key={index} {...service} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Services;
