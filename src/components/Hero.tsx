@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
         </p>
 
         <a
-          href="https://wa.me/11983160820" 
+          href="https://wa.me/5511983160820" 
           target="_blank"
           rel="noopener noreferrer"
           className="bg-helena-wine hover:bg-helena-wine-dark text-white py-3 px-8 rounded-full text-lg transition-all transform hover:scale-105 shadow-lg border border-transparent"

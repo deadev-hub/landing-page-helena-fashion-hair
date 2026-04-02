@@ -2,7 +2,7 @@ import React from 'react';
 import { Scissors, Palette, Sparkles } from 'lucide-react';
 
 import cortesImage from '../assets/img/estilo_harmonia.png';
-import colorImage from '../assets/img/color_mecha.png';
+import colorImage from '../assets/img/coloração.png';
 import capilarImage from '../assets/img/tratamento_capilar.png';
 
 
@@ -37,8 +37,8 @@ const Services: React.FC = () => {
       icon: <Scissors size={20} />
     },
     {
-      title: "Coloração & Mechas",
-      description: "Técnicas modernas de coloração, luzes e morena iluminada.",
+      title: "Coloração",
+      description: "Técnicas modernas de coloração.",
       image: colorImage,
       icon: <Palette size={20} />
     },

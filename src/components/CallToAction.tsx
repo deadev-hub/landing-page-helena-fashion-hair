@@ -11,7 +11,7 @@ const CallToAction: React.FC = () => {
           Entre em contato conosco pelo WhatsApp e agende seu horário. Estamos ansiosos para recebê-la!
         </p>
         <a 
-          href="https://wa.me/11983160820" 
+          href="https://wa.me/5511983160820" 
           target="_blank" 
           rel="noopener noreferrer"
           className="inline-block bg-[#823a45] text-[#fcf3f2] font-semibold py-3 px-10 rounded-full text-lg hover:bg-helena-accent transition-colors shadow-lg"
