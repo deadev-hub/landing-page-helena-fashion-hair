@@ -2,7 +2,7 @@ import React from 'react';
 import { Scissors, Palette, Sparkles } from 'lucide-react';
 
 import cortesImage from '../assets/img/estilo_harmonia.png';
-import colorImage from '../assets/img/coloração.png';
+import colorImage from '../assets/img/coloracao.png';
 import capilarImage from '../assets/img/tratamento_capilar.png';
 
 
