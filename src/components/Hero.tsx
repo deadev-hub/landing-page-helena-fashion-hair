@@ -6,15 +6,14 @@ import heroImage from '../assets/img/beleza_boas_maos.png'
 const Hero: React.FC = () => {
   return (
     <section className="relative h-[60vh] md:h-[75vh] w-full flex items-center justify-center overflow-hidden">
-      
-     
+
       <div
         className="absolute inset-0 z-0 bg-cover bg-[center_30%] bg-no-repeat"
         style={{
           backgroundImage: `url(${heroImage})`,
         }}
       >
-       
+
         <div className="absolute inset-0 bg-black/50 md:bg-black/40"></div>
       </div>     
       
